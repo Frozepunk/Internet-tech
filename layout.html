@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts in CSS</title>
+    <style>
+    .container {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.one {
+    width: 10%;
+    height: 15%;
+}
+.two {
+    width: 20%;
+    height: 15%;
+}
+.three {
+    width: 30%;
+    height: 15%;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="cell one centerFlex">One</div>
+        <div class="cell one centerFlex">One</div>
+        <div class="cell two centerFlex">Two</div>
+        <div class="cell two centerFlex">Two</div>
+        <div class="cell three centerFlex">Three</div>
+        <div class="cell three centerFlex">Three</div>
+    </section>   
+</body>
+</html>
