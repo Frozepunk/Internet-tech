@@ -1,0 +1,31 @@
+.container{
+    height: 500px;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "one one one two two"
+    "one one one two two"
+    "one one one three three"
+    "four four four four five"
+    ;
+}
+.one,.two,.three,.four,.five{
+    border: 2px solid red ;
+}
+.one{
+    
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
