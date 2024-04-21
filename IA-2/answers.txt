@@ -1,0 +1,106 @@
+Describe two ways to include javascript inside html.
+1 Inline JavaScript: In this approach, JavaScript code is written directly within the HTML document, enclosed within <script> tags. 
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+
+    <h1>Hello, world!</h1>
+
+    <script>
+        // JavaScript code
+        alert("This is an inline JavaScript alert!");
+    </script>
+
+</body>
+</html>
+```
+2. External JavaScript File: In this approach, JavaScript code is stored in an external file with a .js extension, and then linked to the HTML document using the <script> tag's src attribute. 
+Here's an example:
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript Example</title>
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Hello, world!</h1>
+
+</body>
+</html>
+```
+
+When should we include javascript at the end of the body tag?
+link -> https://www.hackinbits.com/interview-questions/html/why-script-tags-should-be-placed-at-the-end-of-body-tag
+
+Which of the following are not a valid identifier?
+sum
+1sum
+$sum
+_sum
+43
+total sum
+
+Answer -> 
+sum: Valid. Begins with a letter.
+1sum: Not valid. Begins with a digit.
+$sum: Valid. Begins with a dollar sign.
+_sum: Valid. Begins with an underscore.
+43: Not valid. Begins with a digit and doesn't contain any letters, underscores, or dollar signs.
+total sum: Not valid. Contains a space, which is not allowed in identifiers.
+
+What are three ways in which a variable can be declared in javascript?
+
+var: Function-scoped variable declaration, historically used in JavaScript.
+let: Block-scoped variable declaration introduced in ECMAScript 6 (ES6).
+const: Block-scoped constant declaration introduced in ECMAScript 6 (ES6).
+
+What are values of a boolean variable?
+
+true: Represents the true state or affirmative condition.
+false: Represents the false state or negative condition.
+
+Show three ways to write a string in javascript.
+
+Double Quotes (""): Enclosing the string within double quotes.
+let str1 = "This is a string written using double quotes.";
+
+Single Quotes (''): Enclosing the string within single quotes.
+let str2 = 'This is a string written using single quotes.';
+
+Template Literals (``): Enclosing the string within backticks, 
+allowing for interpolation of variables and multiline strings.
+let name = 'John';
+let str3 = `Hello, ${name}! This is a string written using template literals.`;
+
+Show two ways to create an array in javascript.
+
+Array Literal Syntax ([]): This is the most common and straightforward way to create an array. You enclose the elements of the array within square brackets, 
+separated by commas.
+let array1 = [1, 2, 3, 4, 5];
+
+Array Constructor Syntax (new Array()): You can also create an array using the Array constructor. This method allows you to specify the initial length of the array as well as its elements. If you pass a single numeric argument to the constructor, 
+it creates an empty array with the specified length.
+let array2 = new Array(3); 
+You can also pass elements to the constructor to initialize the array
+let array3 = new Array("apple", "banana", "orange");
+
+Create a javascript object to represent a mobile phone which is described by keys name, brand, year, os and price. Use appropriate values for the keys.
+
+let mobilePhone = {
+    name: "iPhone 13",
+    brand: "Apple",
+    year: 2021,
+    os: "iOS",
+    price: 999 // Price in USD
+};
+
+
