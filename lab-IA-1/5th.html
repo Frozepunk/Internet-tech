@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Span Content</title>
+    <style>
+        /* Optional CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Update Span Content</h2>
+        <form id="nameForm">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+            <span id="outputSpan"></span>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission and update span content
+        document.getElementById('nameForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the input value
+            var name = document.getElementById('name').value;
+
+            // Update the span content
+            document.getElementById('outputSpan').textContent = "Hello, " + name + "!";
+
+            // Clear the input field
+            document.getElementById('name').value = '';
+        });
+    </script>
+
+</body>
+
+</html>
